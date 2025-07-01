@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Poppins", sans-serif;
+
+}
+
+.header{
+    background-color: rgb(150, 35, 35);
+    color:azure;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    gap:50%;
+    padding-top: 30px;
+}
+
+.logo a{
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: "Kelly Slab", sans-serif;
+}
+
+.nav-list{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap:70px;
+    position: relative;
+
+}
+.nav-list li a{
+    color: azure;
+    text-decoration: none;
+}
+
+/* nav hover */
+.nav-list a:hover{
+    color: black;
+}
+
+.checkbox{
+    display: none;
+}
+.label{
+    font-size: 1.5rem;
+    display: none;
+}
+
+@media (max-width:960px){
+    .nav-list{
+        position: absolute;
+        flex-direction: column;
+        top: 15px;
+        right: 10px;
+        gap: 35px;
+        background-color:rgb(172, 166, 166);
+        padding: 50px;
+        padding-top: 100px;
+        z-index: 1;
+        display: none;
+    }
+
+
+    .label{
+        display: block;
+        z-index: 2;
+    }
+
+    .checkbox:checked + .label + .nav-list{
+        display:flex;
+    }
+
+}
+
+
+
+/* HERO SECTION */
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-text{
+    flex-basis: 44%;
+    align-self: center;
+}
+
+.hero-text h1{
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+}
+.hero-text h2{
+    text-align: center;
+    font-size: 5rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.hero-text p{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+.btn-hero1{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 150px;
+
+
+}
+.btn-hero2{
+    text-decoration: none;
+    color:black;
+    background:white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 30px;
+
+
+
+}
+.btn-hero1:hover{
+    background-color: white;
+    color: black;
+
+}
+.btn-hero2:hover{
+    background-color: black;
+    color: white;
+
+}
+
+
+.hero-img img{
+    width: 800px;
+}
+
+@media (max-width:900px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero{
+        margin-top: 60px;
+    }
+    .hero-text h1{
+        font-size: 2rem;
+    }
+    .hero-text h2{
+        font-size: 3rem;
+    }
+    .hero-text p{
+        font-size: 1rem;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .btn-hero2{
+        margin-left:30px;
+    }
+    .btn-hero1{
+        margin-left: 80px;
+    }
+    .hero-img img{
+        width: 400px;
+        margin-left: 20px;
+
+    }
+
+}
