@@ -68,6 +68,7 @@
     .label{
         display: block;
         z-index: 2;
+        color:black;
     }
 
     .checkbox:checked + .label + .nav-list{
@@ -147,7 +148,7 @@
     width: 800px;
 }
 
-@media (max-width:900px){
+@media (max-width:1000px){
     .hero{
         flex-direction: column;
     }
@@ -175,6 +176,56 @@
         width: 400px;
         margin-left: 20px;
 
+    }
+
+}
+
+/* 
+about me */
+.about-me{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 70vh;
+}
+.about-me h1{
+    flex-basis: 44%;
+    font-size: 5rem;
+    color: rgb(150, 35, 35);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.about-me p{
+    flex-basis: 40%;
+    font-size: 1.5rem;
+    text-align: left;
+    border-left: 5px solid red;
+    padding: 30px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+@media (max-width:1000px){
+    .about-me{
+        display: block;
+        margin: 50px;
+        margin-top: 100px;
+        height: 50vh;
+    }
+
+    .about-me h1{
+        flex-basis: auto;
+        font-size: 2.5rem;
+    }
+    .about-me p{
+        flex-basis: auto;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 
 }
